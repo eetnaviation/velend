@@ -15,7 +15,7 @@ public class main {
         JFrame frame = new JFrame("velend");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(780, 780);
-
+        
         // Text Area at the Center
         ta.setEditable(false);
 
