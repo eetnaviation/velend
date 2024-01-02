@@ -3,6 +3,7 @@ package eetnaviation.velend.guiApp;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import eetnaviation.velend.guiApp.setup.download;
 import java.awt.event.ActionListener;
 import java.net.*;
 
@@ -28,12 +29,14 @@ class gui {
         JMenuBar mb = new JMenuBar();
         JMenu m1 = new JMenu("MKALAMOD");
         JMenu m2 = new JMenu("MKALAMOD - LEGACY");
-        JMenu m3 = new JMenu("Help");
+        JMenu m3 = new JMenu("MKALAMOD - LIMBO");
+        JMenu m4 = new JMenu("Help");
         mb.add(m1);
         mb.add(m2);
         mb.add(m3);
+        mb.add(m4);
 
-        JMenuItem m31 = new JMenuItem(new AbstractAction("MKalamod") {
+        JMenuItem m41 = new JMenuItem(new AbstractAction("MKalamod") {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ta.selectAll();
@@ -44,11 +47,13 @@ class gui {
                 ta.append("Discord: https://discord.gg/dkJDcMDz6T\n");
                 ta.append("What are legacy versions?\n");
                 ta.append("Legacy versions are the versions that are only in the update\n");
+                ta.append("What are limbo versions?\n");
+                ta.append("Limbo versions are not new stable versions and not old legacy versions.\n");
                 ta.append("channel of the discord server\n");
                 ta.append("--------------------------------\n");
             }
         });
-        JMenuItem m32 = new JMenuItem(new AbstractAction("velend") {
+        JMenuItem m42 = new JMenuItem(new AbstractAction("velend") {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ta.selectAll();
@@ -62,6 +67,76 @@ class gui {
             }
         });
 
+        JMenuItem m31 = new JMenuItem(new AbstractAction("1.19.3 - v3.1b") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod LEGACY v3.1b\n");
+                ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
+                download.downloadZip("31b");
+                ta.append("Patch notes:\n");
+                ta.append("DO NOT USE, UNSTABLE, BAD\n");
+                ta.append("USE AT OWN RISK - NO SUPPORT\n");
+                ta.append("\n");
+                ta.append("--------------------------------\n");
+            }
+        });
+        JMenuItem m32 = new JMenuItem(new AbstractAction("1.19.3 - v4.0b") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod LEGACY v4.0b\n");
+                ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
+                download.downloadZip("40b");
+                ta.append("Patch notes:\n");
+                ta.append("DO NOT USE, UNSTABLE, BAD\n");
+                ta.append("USE AT OWN RISK - NO SUPPORT\n");
+                ta.append("\n");
+                ta.append("Bug notes:\n");
+                ta.append("When using storage esp do not use shader rendering\n");
+                ta.append("in sodium. Doing so will crash the game\n");
+                ta.append("--------------------------------\n");
+            }
+        });
+
+        JMenuItem m33 = new JMenuItem(new AbstractAction("1.19.3 - v5.0b") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod LEGACY v5.0b\n");
+                ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
+                download.downloadZip("50b");
+                ta.append("Patch notes:\n");
+                ta.append("Might be buggy.\n");
+                ta.append("USE AT OWN RISK - NO SUPPORT\n");
+                ta.append("\n");
+                ta.append("--------------------------------\n");
+            }
+        });
+
+        JMenuItem m34 = new JMenuItem(new AbstractAction("1.19.3 - v5.1b") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod LEGACY v5.1b\n");
+                ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
+                download.downloadZip("51b");
+                ta.append("Patch notes:\n");
+                ta.append("--NO PATCH NOTES-\n");
+                ta.append("USE AT OWN RISK - NO SUPPORT\n");
+                ta.append("\n");
+                ta.append("--------------------------------\n");
+            }
+        });
+
         JMenuItem m11 = new JMenuItem(new AbstractAction("1.19.4 - STABLE - v5.2b") {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -69,9 +144,7 @@ class gui {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v5.2b\n");
-                try {
-                    Desktop.getDesktop().browse(new URL("https://github.com/KEVINIIE123/MKalamod/releases/download/v5.2b/mods.zip").toURI());
-                } catch (Exception e1) {}
+                download.downloadZip("52b");
                 ta.append("Patch notes:\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
@@ -88,9 +161,7 @@ class gui {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v6.1.1\n");
-                try {
-                    Desktop.getDesktop().browse(new URL("https://github.com/KEVINIIE123/MKalamod/releases/download/v6.1.1b/mods.zip").toURI());
-                } catch (Exception e1) {}
+                download.downloadZip("611");
                 ta.append("Patch notes:\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("Sodium is not included\n");
@@ -104,9 +175,7 @@ class gui {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v7.1b\n");
-                try {
-                    Desktop.getDesktop().browse(new URL("https://github.com/KEVINIIE123/MKalamod/releases/download/v7.1b/mods.zip").toURI());
-                } catch (Exception e1) {}
+                download.downloadZip("71b");
                 ta.append("Patch notes:\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
@@ -123,9 +192,7 @@ class gui {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v8.0b\n");
-                try {
-                    Desktop.getDesktop().browse(new URL("https://github.com/KEVINIIE123/MKalamod/releases/download/v8.0b/mods.zip").toURI());
-                } catch (Exception e1) {}
+                download.downloadZip("80b");
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES PROVIDED--\n");
                 ta.append("\n");
@@ -144,9 +211,7 @@ class gui {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v3.0a\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                try {
-                    Desktop.getDesktop().browse(new URL("google.com").toURI());
-                } catch (Exception e1) {}
+                download.downloadZip("30a");
                 ta.append("Patch notes:\n");
                 ta.append("- Added Banana+ (version 100)\n" +
                         "- Added Meteor Crash Addon 0.6\n" +
@@ -185,9 +250,7 @@ class gui {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v1.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                try {
-                    Desktop.getDesktop().browse(new URL("google.com").toURI());
-                } catch (Exception e1) {}
+                download.downloadZip("10b");
                 ta.append("Patch notes:\n");
                 ta.append("- Updated Cull Leaves from v3.0.0 to v3.0.1\n" +
                         "- Updated Effective from v1.4 to v1.6\n" +
@@ -222,9 +285,7 @@ class gui {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v2.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                try {
-                    Desktop.getDesktop().browse(new URL("google.com").toURI());
-                } catch (Exception e1) {}
+                download.downloadZip("20b");
                 ta.append("Patch notes:\n");
                 ta.append("https://pastebin.com/T6KLq7gD\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -247,9 +308,7 @@ class gui {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v2.0.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                try {
-                    Desktop.getDesktop().browse(new URL("google.com").toURI());
-                } catch (Exception e1) {}
+                download.downloadZip("201b");
                 ta.append("Patch notes:\n");
                 ta.append("- Updated Meteor Client from v0.5.2-1733 to v0.5.2-1737\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -271,9 +330,7 @@ class gui {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v2.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                try {
-                    Desktop.getDesktop().browse(new URL("google.com").toURI());
-                } catch (Exception e1) {}
+                download.downloadZip("21b");
                 ta.append("Patch notes:\n");
                 ta.append("- Added Sodium Extra\n" +
                         "- Added Reese's Sodium Options\n");
@@ -296,9 +353,7 @@ class gui {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v3.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                try {
-                    Desktop.getDesktop().browse(new URL("google.com").toURI());
-                } catch (Exception e1) {}
+                download.downloadZip("30b");
                 ta.append("Patch notes:\n");
                 ta.append("- Added Borderless Mining\n" +
                         "- Added Debugify\n" +
@@ -340,6 +395,10 @@ class gui {
         m2.add(m26);
         m3.add(m31);
         m3.add(m32);
+        m3.add(m33);
+        m3.add(m34);
+        m4.add(m41);
+        m4.add(m42);
 
         //Adding Components to the frame.
         frame.getContentPane().add(BorderLayout.SOUTH, panel);
