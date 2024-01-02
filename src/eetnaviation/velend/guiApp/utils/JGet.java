@@ -1,5 +1,7 @@
 package eetnaviation.velend.guiApp.utils;
 
+import eetnaviation.velend.guiApp.setup.installMods;
+
 import javax.swing.*;
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -43,6 +45,8 @@ public class JGet extends SwingWorker<Void, Void> {
                     }
                 }
                 System.out.println("File downloaded successfully to: " + destinationFilePath);
+                System.out.println("Unzipping...");
+                installMods.unZip();
             }
         } catch (IOException e) {
             e.printStackTrace();
