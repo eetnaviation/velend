@@ -1,11 +1,11 @@
-package eetnaviation.velend.guiApp.setup;
+package eetnaviation.velend.guiApp.utils;
 
 import javax.swing.*;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-class JGet extends SwingWorker<Void, Void> {
+public class JGet extends SwingWorker<Void, Void> {
     private final String fileURL;
     private final String destinationFolder;
 
@@ -42,7 +42,6 @@ class JGet extends SwingWorker<Void, Void> {
                         outputStream.write(buffer, 0, bytesRead);
                     }
                 }
-
                 System.out.println("File downloaded successfully to: " + destinationFilePath);
             }
         } catch (IOException e) {
@@ -53,9 +52,10 @@ class JGet extends SwingWorker<Void, Void> {
     }
 
     public static void main(String url, String destination) {
+        System.out.println("Downloading:" + url);
+        System.out.println("Destination:" + destination);
         String fileURL = url;
         String destinationFolder = destination;
-
         JGet jGet = new JGet(fileURL, destinationFolder);
         jGet.execute();
     }
