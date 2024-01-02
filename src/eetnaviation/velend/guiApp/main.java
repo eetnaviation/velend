@@ -6,6 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.*;
 
+//TODO: Add https://fabricmc.net/wiki/install functions to install fabric via cli
+
 class gui {
     public static void main(String args[]) {
 
@@ -16,6 +18,7 @@ class gui {
 
         // Text Area at the Center
         JTextArea ta = new JTextArea();
+        ta.setEditable(false);
 
         //Creating the panel at bottom and adding components
         JPanel panel = new JPanel(); // the panel is not visible in output
