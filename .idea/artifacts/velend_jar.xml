@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="velend:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/velend_jar</output-path>
+    <root id="archive" name="velend.jar">
+      <element id="module-output" name="velend" />
+    </root>
+  </artifact>
+</component>
