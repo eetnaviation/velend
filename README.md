@@ -9,3 +9,4 @@ Java open-source downloader (Soon installer!) for mkalamod.
 
 # Credits:
 MKALAMOD DISCORD: https://discord.gg/dkJDcMDz6T
+MKALAMOD GITHUB: https://github.com/KEVINIIE123/MKalamod
