@@ -55,7 +55,7 @@ class gui {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("HELP > velend\n");
-                ta.append("Running velend v1.0\n");
+                ta.append("Running velend v1.1\n");
                 ta.append("velend is an open-source downloader (And soon installer!) for mkalamod.\n");
                 ta.append("Made by eetnaviation.\n");
                 ta.append("--------------------------------\n");
