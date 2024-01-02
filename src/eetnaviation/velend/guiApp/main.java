@@ -8,6 +8,9 @@ import eetnaviation.velend.guiApp.setup.download;
 //TODO: Add https://fabricmc.net/wiki/install functions to install fabric via cli
 
 public class main {
+
+    static String fabricInstall = "false";
+
     private static JTextArea ta = new JTextArea();
     public static void main(String args[]) {
 
@@ -15,7 +18,7 @@ public class main {
         JFrame frame = new JFrame("velend");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(780, 780);
-        
+
         // Text Area at the Center
         ta.setEditable(false);
 
@@ -29,10 +32,25 @@ public class main {
         JMenu m2 = new JMenu("MKALAMOD - LEGACY");
         JMenu m3 = new JMenu("MKALAMOD - LIMBO");
         JMenu m4 = new JMenu("Help");
+        JMenu m5 = new JMenu("Options");
         mb.add(m1);
         mb.add(m2);
         mb.add(m3);
         mb.add(m4);
+        mb.add(m5);
+        JCheckBoxMenuItem m51 = new JCheckBoxMenuItem(new AbstractAction("INSTALL FABRIC") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                switch(fabricInstall) {
+                    case "true":
+                        fabricInstall = "false";
+                        break;
+                    case "false":
+                        fabricInstall= "true";
+                        break;
+                }
+            }
+        });
 
         JMenuItem m41 = new JMenuItem(new AbstractAction("MKalamod") {
             @Override
@@ -73,7 +91,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v3.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("31b");
+                download.downloadZip("31b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("DO NOT USE, UNSTABLE, BAD\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -89,7 +107,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v4.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("40b");
+                download.downloadZip("40b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("DO NOT USE, UNSTABLE, BAD\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -109,7 +127,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v5.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("50b");
+                download.downloadZip("50b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("Might be buggy.\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -126,7 +144,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v5.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("51b");
+                download.downloadZip("51b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES-\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -142,7 +160,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v5.2b\n");
-                download.downloadZip("52b");
+                download.downloadZip("52b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
@@ -159,7 +177,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v6.1.1\n");
-                download.downloadZip("611");
+                download.downloadZip("611", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("Sodium is not included\n");
@@ -173,7 +191,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v7.1b\n");
-                download.downloadZip("71b");
+                download.downloadZip("71b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
@@ -190,7 +208,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v8.0b\n");
-                download.downloadZip("80b");
+                download.downloadZip("80b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES PROVIDED--\n");
                 ta.append("\n");
@@ -209,7 +227,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v3.0a\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("30a");
+                download.downloadZip("30a", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("- Added Banana+ (version 100)\n" +
                         "- Added Meteor Crash Addon 0.6\n" +
@@ -248,7 +266,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v1.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("10b");
+                download.downloadZip("10b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("- Updated Cull Leaves from v3.0.0 to v3.0.1\n" +
                         "- Updated Effective from v1.4 to v1.6\n" +
@@ -283,7 +301,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v2.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("20b");
+                download.downloadZip("20b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("https://pastebin.com/T6KLq7gD\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -306,7 +324,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v2.0.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("201b");
+                download.downloadZip("201b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("- Updated Meteor Client from v0.5.2-1733 to v0.5.2-1737\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -328,7 +346,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v2.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("21b");
+                download.downloadZip("21b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("- Added Sodium Extra\n" +
                         "- Added Reese's Sodium Options\n");
@@ -351,7 +369,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v3.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("30b");
+                download.downloadZip("30b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("- Added Borderless Mining\n" +
                         "- Added Debugify\n" +
@@ -397,6 +415,7 @@ public class main {
         m3.add(m34);
         m4.add(m41);
         m4.add(m42);
+        m5.add(m51);
 
         //Adding Components to the frame.
         frame.getContentPane().add(BorderLayout.SOUTH, panel);

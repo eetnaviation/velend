@@ -9,18 +9,28 @@ public class installMods {
 
     private static String zipPath;
     private static String zipDestination;
+    private static String fabricStatus;
 
-    public static void Main(String url, String destination) {
+    public static void Main(String url, String destination, String fabricInstall) {
         folderUtils.DeleteFolder(destination);
         folderUtils.CreateFolder(destination);
         zipPath = destination + "\\mods.zip";
         zipDestination = destination;
+        fabricStatus = fabricInstall;
 
         JGet.main(url, destination);
     }
 
     public static void unZip() {
         fileUtils.unZip(zipPath, zipDestination);
+        if (fabricStatus == "true") {
+            //installFabric();
+            System.out.println("Run fabric install");
+        }
         main.installDone();
+    }
+
+    public static void installFabric() {
+
     }
 }
