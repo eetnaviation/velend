@@ -4,12 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import eetnaviation.velend.guiApp.setup.download;
-import java.awt.event.ActionListener;
-import java.net.*;
 
 //TODO: Add https://fabricmc.net/wiki/install functions to install fabric via cli
 
-class gui {
+public class main {
+    private static JTextArea ta = new JTextArea();
     public static void main(String args[]) {
 
         //Creating the Frame
@@ -18,7 +17,6 @@ class gui {
         frame.setSize(780, 780);
 
         // Text Area at the Center
-        JTextArea ta = new JTextArea();
         ta.setEditable(false);
 
         //Creating the panel at bottom and adding components
@@ -405,5 +403,9 @@ class gui {
         frame.getContentPane().add(BorderLayout.NORTH, mb);
         frame.getContentPane().add(BorderLayout.CENTER, ta);
         frame.setVisible(true);
+    }
+
+    public static void installDone() {
+        ta.append("INSTALLATION FOR MKALAMOD COMPLETED\n");
     }
 }

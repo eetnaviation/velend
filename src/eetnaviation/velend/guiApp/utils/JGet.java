@@ -56,8 +56,8 @@ public class JGet extends SwingWorker<Void, Void> {
     }
 
     public static void main(String url, String destination) {
-        System.out.println("Downloading:" + url);
-        System.out.println("Destination:" + destination);
+        System.out.println("Downloading: " + url);
+        System.out.println("Destination: " + destination);
         String fileURL = url;
         String destinationFolder = destination;
         JGet jGet = new JGet(fileURL, destinationFolder);
