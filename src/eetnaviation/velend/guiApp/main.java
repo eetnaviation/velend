@@ -62,7 +62,7 @@ public class main {
                 ta.append("Mkalamod is an utility minecraft modpack made by kevinkald.\n");
                 ta.append("Discord: https://discord.gg/dkJDcMDz6T\n");
                 ta.append("What are legacy versions?\n");
-                ta.append("Legacy versions are the versions that are only in the update\n");
+                ta.append("Legacy versions are the versions that are only in the discord server.\n");
                 ta.append("What are limbo versions?\n");
                 ta.append("Limbo versions are not new stable versions and not old legacy versions.\n");
                 ta.append("channel of the discord server\n");
@@ -145,6 +145,54 @@ public class main {
                 ta.append("Downloading MKalamod LEGACY v5.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
                 download.downloadZip("51b", fabricInstall);
+                ta.append("Patch notes:\n");
+                ta.append("--NO PATCH NOTES-\n");
+                ta.append("USE AT OWN RISK - NO SUPPORT\n");
+                ta.append("\n");
+                ta.append("--------------------------------\n");
+            }
+        });
+
+        JMenuItem m35 = new JMenuItem(new AbstractAction("1.20.2 - v7.0b") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod v7.0b\n");
+                download.downloadZip("70b", fabricInstall);
+                ta.append("Patch notes:\n");
+                ta.append("--NO PATCH NOTES-\n");
+                ta.append("USE AT OWN RISK - NO SUPPORT\n");
+                ta.append("\n");
+                ta.append("--------------------------------\n");
+            }
+        });
+
+        JMenuItem m36 = new JMenuItem(new AbstractAction("1.20.1 - v6.1b") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod v6.1b\n");
+                download.downloadZip("61b", fabricInstall);
+                ta.append("Patch notes:\n");
+                ta.append("--NO PATCH NOTES-\n");
+                ta.append("USE AT OWN RISK - NO SUPPORT\n");
+                ta.append("\n");
+                ta.append("--------------------------------\n");
+            }
+        });
+
+        JMenuItem m37 = new JMenuItem(new AbstractAction("1.20.1 - v6.0b") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod v6.0b\n");
+                download.downloadZip("60b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES-\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -413,6 +461,9 @@ public class main {
         m3.add(m32);
         m3.add(m33);
         m3.add(m34);
+        m3.add(m35);
+        m3.add(m36);
+        m3.add(m37);
         m4.add(m41);
         m4.add(m42);
         m5.add(m51);
