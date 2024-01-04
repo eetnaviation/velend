@@ -76,7 +76,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("HELP > velend\n");
-                ta.append("Running velend v1.1\n");
+                ta.append("Running velend v1.2\n"); // TODO: Make version number a config variable
                 ta.append("velend is an open-source downloader (And soon installer!) for mkalamod.\n");
                 ta.append("Made by eetnaviation.\n");
                 ta.append("--------------------------------\n");
