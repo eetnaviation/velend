@@ -78,7 +78,7 @@ public class download {
                 mkalaVersionConverted = "1.19.3";
                 break;
             case "10b":
-                mkalaVersionConverted = "1.19.2";
+                mkalaVersionConverted = "1.19.3";
                 break;
             case "30a":
                 mkalaVersionConverted = "1.19.2";
@@ -96,10 +96,10 @@ public class download {
                 mkalaVersionConverted = "1.19.4";
                 break;
             case "51b":
-                mkalaVersionConverted = "1.19.4";
+                mkalaVersionConverted = "1.19.3";
                 break;
             case "50b":
-                mkalaVersionConverted = "1.19.4";
+                mkalaVersionConverted = "1.19.3";
                 break;
             case "40b":
                 mkalaVersionConverted = "1.19.3";
