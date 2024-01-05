@@ -3,16 +3,33 @@ package eetnaviation.velend.guiApp;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.*;
+import java.util.Properties;
+
 import eetnaviation.velend.guiApp.setup.download;
 
 //TODO: Add https://fabricmc.net/wiki/install functions to install fabric via cli
 
 public class main {
+    private static String velendVersion = "N/A";
 
     static String fabricInstall = "false";
 
     private static JTextArea ta = new JTextArea();
-    public static void main(String args[]) {
+    public static void main(String[] args) {
+
+        //Load the config file
+        try {
+            String configFilePath = "src/config.properties";
+            FileInputStream propsInput = new FileInputStream(configFilePath);
+            Properties prop = new Properties();
+            prop.load(propsInput);
+
+            velendVersion = prop.getProperty("VERSION");
+        } catch (IOException ignored) {
+
+        }
+
 
         //Creating the Frame
         JFrame frame = new JFrame("velend");
@@ -76,7 +93,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("HELP > velend\n");
-                ta.append("Running velend v1.2\n"); // TODO: Make version number a config variable
+                ta.append("Running velend " + velendVersion + "\n");
                 ta.append("velend is an open-source downloader (And soon installer!) for mkalamod.\n");
                 ta.append("Made by eetnaviation.\n");
                 ta.append("--------------------------------\n");
