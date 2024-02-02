@@ -61,9 +61,11 @@ public class main {
                 switch(fabricInstall) {
                     case "true":
                         fabricInstall = "false";
+                        System.out.println("Fabric install false");
                         break;
                     case "false":
-                        fabricInstall= "true";
+                        fabricInstall = "true";
+                        System.out.println("Fabric install true");
                         break;
                 }
             }
