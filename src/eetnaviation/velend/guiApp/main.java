@@ -96,7 +96,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("HELP > velend\n");
                 ta.append("Running velend " + velendVersion + "\n");
-                ta.append("velend is an open-source downloader (And soon installer!) for mkalamod.\n");
+                ta.append("velend is an open-source downloader (And (not soon) in the far future installer!) for mkalamod.\n");
                 ta.append("Made by eetnaviation.\n");
                 ta.append("--------------------------------\n");
             }
@@ -286,6 +286,25 @@ public class main {
             }
         });
 
+        JMenuItem m15 = new JMenuItem(new AbstractAction("1.21 - DEV - v9.0b") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod v9.0b\n");
+                download.downloadZip("90b", fabricInstall);
+                ta.append("Patch notes:\n");
+                ta.append("--NO PATCH NOTES PROVIDED--\n");
+                ta.append("\n");
+                ta.append("Bug notes:\n");
+                ta.append("When using storage esp do not use shader rendering\n");
+                ta.append("in sodium. Doing so will crash the game\n");
+                ta.append("--------------------------------\n");
+            }
+        });
+
+
         JMenuItem m21 = new JMenuItem(new AbstractAction("1.19.2 - v3.0a") {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -470,6 +489,7 @@ public class main {
         m1.add(m12);
         m1.add(m13);
         m1.add(m14);
+        m1.add(m15);
         m2.add(m21);
         m2.add(m22);
         m2.add(m23);

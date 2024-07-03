@@ -12,6 +12,8 @@ public class installFabricForge {
 
     private static void installFabric(String minecraftVersion) {
         //run fabric install
+        System.out.println("Run fabric install on ver, " + minecraftVersion);
+
     }
 
     private static void installForge(String minecraftVersion) {

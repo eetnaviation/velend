@@ -60,6 +60,9 @@ public class download {
         else if (Objects.equals(version, "60b")) {
             installMods.Main("https://github.com/KEVINIIE123/MKalamod/releases/download/v6.0b/mods.zip", modsDir, fabricInstallStatus, minecraftVersion);
         }
+        else if (Objects.equals(version, "90b")) {
+            installMods.Main("https://github.com/KEVINIIE123/MKalamod/releases/download/v9.0b/mods.zip", modsDir, fabricInstallStatus, minecraftVersion);
+        }
     }
 
     private static String getVersion(String mkalaVersion) {
@@ -115,6 +118,9 @@ public class download {
                 break;
             case "60b":
                 mkalaVersionConverted = "1.20.1";
+                break;
+            case "90b":
+                mkalaVersionConverted = "1.21";
                 break;
         }
         return mkalaVersionConverted;

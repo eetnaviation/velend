@@ -28,7 +28,6 @@ public class installMods {
         if (fabricStatus == "true") {
             //installFabric();
             installFabricForge.runInstall("fabric", minecraftVersion);
-            System.out.println("Run fabric install");
         }
         main.installDone();
     }
