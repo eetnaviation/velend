@@ -484,11 +484,47 @@ public class main {
                 ta.append("--------------------------------\n");
             }
         });
+        JMenuItem m16 = new JMenuItem(new AbstractAction("1.20.4 - DEV - v8.1b") {
+        	@Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod v8.1b\n");
+                download.downloadZip("81b", fabricInstall);
+                ta.append("Patch notes:\n");
+                ta.append("--NO PATCH NOTES PROVIDED--\n");
+                ta.append("\n");
+                ta.append("Bug notes:\n");
+                ta.append("When using storage esp do not use shader rendering\n");
+                ta.append("in sodium. Doing so will crash the game\n");
+                ta.append("--------------------------------\n");
+            }
+        });
+        JMenuItem m17 = new JMenuItem(new AbstractAction("1.20.4 - STABLE - v8.2b") {
+        	@Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod v8.2b\n");
+                download.downloadZip("82b", fabricInstall);
+                ta.append("Patch notes:\n");
+                ta.append("Baritone is a bit buggy!\n");
+                ta.append("\n");
+                ta.append("Bug notes:\n");
+                ta.append("When using storage esp do not use shader rendering\n");
+                ta.append("in sodium. Doing so will crash the game\n");
+                ta.append("--------------------------------\n");
+            }
+        });
 
         m1.add(m11);
         m1.add(m12);
         m1.add(m13);
         m1.add(m14);
+        m1.add(m16);
+        m1.add(m17);
         m1.add(m15);
         m2.add(m21);
         m2.add(m22);
