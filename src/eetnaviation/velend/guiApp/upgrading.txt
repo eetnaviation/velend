@@ -1,0 +1,39 @@
+MODIFY download.java FUNC downloadZip()
+
+else if (Objects.equals(version, "mkala-version")) {
+        	installMods.Main("dl-link", modsDir, fabricInstallStatus, minecraftVersion);
+}
+
+MODIFY download.java STRING getVersion()
+
+case "mkala-version":
+      			mkalaVersionConverted = "mc-version";
+                break;
+                
+                
+MODIFY main.java:
+
+-Add new JMenuItem:
+JMenuItem (m17 for example) = new JMenuItem(new AbstractAction("(mc-version) - (dev/stable) - (mkala-version)") {
+        	@Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod (mkala-version)\n");
+                download.downloadZip("(mkala-version corresponding in download.java)", fabricInstall);
+                ta.append("Patch notes:\n");
+                ta.append("(add patch notes here if none added then --NO PATCH NOTES PROVIDED--)\n");
+                ta.append("\n");
+                ta.append("Bug notes:\n");
+                ta.append("When using storage esp do not use shader rendering\n");
+                ta.append("in sodium. Doing so will crash the game\n");
+                ta.append("--------------------------------\n");
+            }
+        });
+        
+        
+        
+        
+-Also add the JMenuItem to the JMenu:
+m1.add(m17 for example);
