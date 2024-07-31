@@ -4,8 +4,9 @@ Java open-source downloader (Soon installer!) for MKalamod.
 
 
 # Features:
-- Download all versions (v5.0+) from MKalamod github!
-- Show all info for legacy versions (Download coming soon!)
+- Download all versions of MKalamod!
+- Install them into your .minecraft/mods directory. (Soon adding support for custome directories and linux)
+- Not yet install fabric.
 
 # Credits:
 MKALAMOD DISCORD: https://discord.gg/dkJDcMDz6T     
