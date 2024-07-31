@@ -96,7 +96,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("HELP > velend\n");
                 ta.append("Running velend " + velendVersion + "\n");
-                ta.append("velend is an open-source downloader (And (not soon) in the far future installer!) for mkalamod.\n");
+                ta.append("velend is an open-source downloader and installer (altough you have to install fabric yourself at this time) for mkalamod.\n");
                 ta.append("Made by eetnaviation.\n");
                 ta.append("--------------------------------\n");
             }
@@ -110,12 +110,13 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v3.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("31b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("DO NOT USE, UNSTABLE, BAD\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("31b", fabricInstall);
             }
         });
         JMenuItem m32 = new JMenuItem(new AbstractAction("1.19.3 - v4.0b") {
@@ -125,8 +126,8 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v4.0b\n");
+                ta.append("");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("40b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("DO NOT USE, UNSTABLE, BAD\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -135,6 +136,7 @@ public class main {
                 ta.append("When using storage esp do not use shader rendering\n");
                 ta.append("in sodium. Doing so will crash the game\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("40b", fabricInstall);
             }
         });
 
@@ -145,13 +147,14 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v5.0b\n");
+                ta.append("");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("50b", fabricInstall);
                 ta.append("Patch notes:\n");
                 ta.append("Might be buggy.\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("50b", fabricInstall);
             }
         });
 
@@ -163,12 +166,13 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v5.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("51b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES-\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("51b", fabricInstall);
             }
         });
 
@@ -179,12 +183,13 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v7.0b\n");
-                download.downloadZip("70b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES-\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("70b", fabricInstall);
             }
         });
 
@@ -195,12 +200,13 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v6.1b\n");
-                download.downloadZip("61b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES-\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("61b", fabricInstall);
             }
         });
 
@@ -211,12 +217,13 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v6.0b\n");
-                download.downloadZip("60b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES-\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("60b", fabricInstall);
             }
         });
 
@@ -227,7 +234,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v5.2b\n");
-                download.downloadZip("52b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
@@ -235,6 +242,7 @@ public class main {
                 ta.append("When using storage esp do not use shader rendering\n");
                 ta.append("in sodium. Doing so will crash the game\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("52b", fabricInstall);
             }
         });
         JMenuItem m12 = new JMenuItem(new AbstractAction("1.20.1 - STABLE - v6.1.1") {
@@ -244,11 +252,12 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v6.1.1\n");
-                download.downloadZip("611", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("Sodium is not included\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("611", fabricInstall);
             }
         });
         JMenuItem m13 = new JMenuItem(new AbstractAction("1.20.2 - STABLE - v7.1b") {
@@ -258,7 +267,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v7.1b\n");
-                download.downloadZip("71b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
                 ta.append("\n");
@@ -266,6 +275,7 @@ public class main {
                 ta.append("When using storage esp do not use shader rendering\n");
                 ta.append("in sodium. Doing so will crash the game\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("71b", fabricInstall);
             }
         });
         JMenuItem m14 = new JMenuItem(new AbstractAction("1.20.4 - DEV - v8.0b") {
@@ -275,7 +285,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v8.0b\n");
-                download.downloadZip("80b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES PROVIDED--\n");
                 ta.append("\n");
@@ -283,6 +293,7 @@ public class main {
                 ta.append("When using storage esp do not use shader rendering\n");
                 ta.append("in sodium. Doing so will crash the game\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("80b", fabricInstall);
             }
         });
 
@@ -293,7 +304,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v9.0b\n");
-                download.downloadZip("90b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES PROVIDED--\n");
                 ta.append("\n");
@@ -301,6 +312,7 @@ public class main {
                 ta.append("When using storage esp do not use shader rendering\n");
                 ta.append("in sodium. Doing so will crash the game\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("90b", fabricInstall);
             }
         });
 
@@ -313,7 +325,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v3.0a\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("30a", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("- Added Banana+ (version 100)\n" +
                         "- Added Meteor Crash Addon 0.6\n" +
@@ -341,6 +353,7 @@ public class main {
                 ta.append("Bug notes:\n");
                 ta.append("No known bugs\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("30a", fabricInstall);
             }
         });
 
@@ -352,7 +365,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v1.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("10b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("- Updated Cull Leaves from v3.0.0 to v3.0.1\n" +
                         "- Updated Effective from v1.4 to v1.6\n" +
@@ -376,6 +389,7 @@ public class main {
                 ta.append("Bug notes:\n");
                 ta.append("No known bugs\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("10b", fabricInstall);
             }
         });
 
@@ -387,7 +401,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v2.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("20b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("https://pastebin.com/T6KLq7gD\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -399,6 +413,7 @@ public class main {
                 ta.append("Bug notes:\n");
                 ta.append("No known bugs\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("20b", fabricInstall);
             }
         });
 
@@ -410,7 +425,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v2.0.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("201b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("- Updated Meteor Client from v0.5.2-1733 to v0.5.2-1737\n");
                 ta.append("USE AT OWN RISK - NO SUPPORT\n");
@@ -421,6 +436,7 @@ public class main {
                 ta.append("Bug notes:\n");
                 ta.append("No known bugs\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("201b", fabricInstall);
             }
         });
 
@@ -432,7 +448,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v2.1b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("21b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("- Added Sodium Extra\n" +
                         "- Added Reese's Sodium Options\n");
@@ -444,6 +460,7 @@ public class main {
                 ta.append("Bug notes:\n");
                 ta.append("No known bugs\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("21b", fabricInstall);
             }
         });
 
@@ -455,7 +472,7 @@ public class main {
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod LEGACY v3.0b\n");
                 ta.append("WARNING! This is a legacy build: ABSOLUTELY NO SUPPORT\n");
-                download.downloadZip("30b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("- Added Borderless Mining\n" +
                         "- Added Debugify\n" +
@@ -482,6 +499,7 @@ public class main {
                 ta.append("Bug notes:\n");
                 ta.append("No known bugs\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("30b", fabricInstall);
             }
         });
         JMenuItem m16 = new JMenuItem(new AbstractAction("1.20.4 - DEV - v8.1b") {
@@ -491,7 +509,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v8.1b\n");
-                download.downloadZip("81b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("--NO PATCH NOTES PROVIDED--\n");
                 ta.append("\n");
@@ -499,6 +517,7 @@ public class main {
                 ta.append("When using storage esp do not use shader rendering\n");
                 ta.append("in sodium. Doing so will crash the game\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("81b", fabricInstall);
             }
         });
         JMenuItem m17 = new JMenuItem(new AbstractAction("1.20.4 - STABLE - v8.2b") {
@@ -508,7 +527,7 @@ public class main {
                 ta.replaceSelection("");
                 ta.append("--------------------------------\n");
                 ta.append("Downloading MKalamod v8.2b\n");
-                download.downloadZip("82b", fabricInstall);
+                ta.append("");
                 ta.append("Patch notes:\n");
                 ta.append("Baritone is a bit buggy!\n");
                 ta.append("\n");
@@ -516,6 +535,7 @@ public class main {
                 ta.append("When using storage esp do not use shader rendering\n");
                 ta.append("in sodium. Doing so will crash the game\n");
                 ta.append("--------------------------------\n");
+                download.downloadZip("82b", fabricInstall);
             }
         });
 
@@ -552,5 +572,9 @@ public class main {
 
     public static void installDone() {
         ta.append("INSTALLATION FOR MKALAMOD COMPLETED\n");
+    }
+    
+    public static void returnErrorMessage(String errorMessage) {
+    	ta.append("Installation stopped, returned the following error message: " + errorMessage);
     }
 }

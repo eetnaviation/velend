@@ -8,15 +8,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 public class fileUtils {
-    public static void unZip(String zipPath, String destination) {
-        String zipFilePath = zipPath;
-
-        String destDir = destination;
-
-        unzip(zipFilePath, destDir);
-    }
-
-    private static void unzip(String zipFilePath, String destDir) {
+    public static void unZip(String zipFilePath, String destDir) {
         File dir = new File(destDir);
         // create output directory if it doesn't exist
         if(!dir.exists()) dir.mkdirs();

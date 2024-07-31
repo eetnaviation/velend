@@ -2,9 +2,15 @@ package eetnaviation.velend.guiApp.setup;
 
 import java.util.Objects;
 
+import eetnaviation.velend.guiApp.main;
+
 public class download {
     public static void downloadZip(String version, String fabricInstallStatus){
         String appdataDir = System.getenv("APPDATA");
+        if (appdataDir == null) {
+        	main.returnErrorMessage("AppDataDir returned null, rawval: " + appdataDir + " , Are you running windows?");
+        	return; 
+        }
         String modsDir = appdataDir + "\\.minecraft\\mods";
         System.out.println("Found user appdata directory! " + appdataDir);
         System.out.println("Compiled mods directory! " + modsDir);
