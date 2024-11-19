@@ -18,6 +18,9 @@ public class download {
         if (Objects.equals(version, "31b")) {
             installMods.Main("https://github.com/KEVINIIE123/MKalamod/releases/download/3.1b/mods.zip", modsDir, fabricInstallStatus, minecraftVersion);
         }
+        else if (Objects.equals(version, "100a")) {
+            installMods.Main("https://github.com/KEVINIIE123/MKalamod/releases/download/v10.0a/mods.zip", modsDir, fabricInstallStatus, minecraftVersion);
+        }
         else if (Objects.equals(version, "40b")) {
             installMods.Main("https://github.com/KEVINIIE123/MKalamod/releases/download/v4.0b/mods.zip", modsDir, fabricInstallStatus, minecraftVersion);
         }

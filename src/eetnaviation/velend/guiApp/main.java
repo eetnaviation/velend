@@ -297,7 +297,7 @@ public class main {
             }
         });
 
-        JMenuItem m15 = new JMenuItem(new AbstractAction("1.21 - DEV - v9.0b") {
+        JMenuItem m15 = new JMenuItem(new AbstractAction("1.21 - STABLE - v9.0b") {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ta.selectAll();
@@ -313,6 +313,57 @@ public class main {
                 ta.append("in sodium. Doing so will crash the game\n");
                 ta.append("--------------------------------\n");
                 download.downloadZip("90b", fabricInstall);
+            }
+        });
+
+        JMenuItem m18 = new JMenuItem(new AbstractAction("1.21.3 - DEV - v10.0a") {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ta.selectAll();
+                ta.replaceSelection("");
+                ta.append("--------------------------------\n");
+                ta.append("Downloading MKalamod v10.0a\n");
+                ta.append("");
+                ta.append("Patch notes:\n");
+                ta.append("THIS IS AN ALPHA RELEASE! THINGS MIGHT NOT WORK PROPERLY AND SOME MODS ARE MISSING! GAME MAY BE UNSTABLE!!!\n" +
+                        "\n" +
+                        "Mods:\n" +
+                        "\n" +
+                        "3d-Skin-Layers [1.7.2]\n" +
+                        "AppleSkin [3.0.6+mc1.21.3]\n" +
+                        "Baritone [1.21.3-SNAPSHOT]\n" +
+                        "BetterF3 [12.0.0]\n" +
+                        "Bobby [5.2.5+mc1.21.2]\n" +
+                        "Concurrent Chunk Management Engine [0.3.0+beta.2.0+1.21.3]\n" +
+                        "EntityCulling [1.7.1]\n" +
+                        "Fabric API [0.109.0+1.21.3]\n" +
+                        "Fabric Language Kotlin [1.12.3+kotlin.2.0.21]\n" +
+                        "Falling Leaves [1.16.3]\n" +
+                        "ImmediatelyFast [1.3.2+1.21.3]\n" +
+                        "Iris [1.8.0+mc1.21.3]\n" +
+                        "Jade [16.0.4+fabric]\n" +
+                        "Ksyxis [1.3.2]\n" +
+                        "Meteor Client [0.5.9-2203]\n" +
+                        "Meteor Villager Roller [1.4.9+mc1.21.3-rev.5443bc0-dirty]\n" +
+                        "Mod Menu [12.0.0-beta.1]\n" +
+                        "Mouse Tweaks [2.27]\n" +
+                        "No Chat Reports [1.21.3-v2.10.1]\n" +
+                        "OptiGUI [2.3.0-beta.6+1.21.2]\n" +
+                        "Physics Mod [3.0.21]\n" +
+                        "Reese's Sodium Options [1.8.0+mc1.21.3]\n" +
+                        "Replay Mod [1.21.2-2.6.20]\n" +
+                        "Sodium [0.6.0+mc1.21.3]\n" +
+                        "Sodium Extra [0.6.0+mc1.21.3]\n" +
+                        "Very Many Players [0.2.0+beta.7.180+1.21.3]\n" +
+                        "ViaFabricPlus [3.5.2]\n" +
+                        "Xaero's Minimap [24.6.2]\n" +
+                        "Xaero's World Map [1.39.1]\n" +
+                        "XaeroPlus [2.24.5]\n");
+                ta.append("\n");
+                ta.append("Bug notes:\n");
+                ta.append("- No bugs reported\n");
+                ta.append("--------------------------------\n");
+                download.downloadZip("100a", fabricInstall);
             }
         });
 
@@ -543,9 +594,10 @@ public class main {
         m1.add(m12);
         m1.add(m13);
         m1.add(m14);
-        m1.add(m16);
+        m1.add(m18);
         m1.add(m17);
         m1.add(m15);
+        m1.add(m16);
         m2.add(m21);
         m2.add(m22);
         m2.add(m23);
